@@ -1,6 +1,6 @@
-body {
+/* body 
   background-color: rgb(3, 20, 58);
-}
+} */
 .grid-cont {
   display: grid;
   grid-template-areas: "photo data";
@@ -10,10 +10,18 @@ body {
 }
 .photo {
   grid-area: photo;
-  background: url("images/thomas-kinto-6MsMKWzJWKc-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  /* border-top-left-radius: 2rem; this part of the code is useless 
+  border-bottom-left-radius: 2rem; */
+}
+
+.photo .container {
+  background: url("images/thomas-kinto-6MsMKWzJWKc-unsplash.jpg"); /*this is the map photo*/
   background-size: cover;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
 }
 
 .data {
@@ -22,7 +30,7 @@ body {
   grid-template-rows: 2fr 1fr;
 }
 .photo2 {
-  background: url("images/pexels-anna-shvets-3786157.jpg");
+  background: url("images/pexels-anna-shvets-3786157.jpg"); /* this will be the mama ki shop photo*/
   background-size: cover;
   border-top-right-radius: 2rem;
 }
