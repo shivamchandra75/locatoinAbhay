@@ -10,18 +10,10 @@
 }
 .photo {
   grid-area: photo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  /* border-top-left-radius: 2rem; this part of the code is useless 
-  border-bottom-left-radius: 2rem; */
-}
-
-.photo .container {
   background: url("images/thomas-kinto-6MsMKWzJWKc-unsplash.jpg"); /*this is the map photo*/
   background-size: cover;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .data {
